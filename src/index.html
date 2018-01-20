@@ -6,9 +6,22 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container" w3-include-html="views/common/header.html"></div>
-	<div class="container" w3-include-html="views/common/contents.html"></div>
-	<div class="container" w3-include-html="views/common/footer.html"></div>	
+	<div class="container">
+		<div class="row" w3-include-html="views/common/header.html"></div>
+		
+		<div class="row">
+			<div class="col-md-8 wrap-main">
+				<div w3-include-html="views/common/filter.html"></div>
+				<div w3-include-html="views/common/contents.html"></div>
+			</div>
+			
+			<div class="col-md-4 wrap-ads">
+				<div w3-include-html="views/common/ads.html"></div>
+			</div>
+		</div>
+
+		<div class="row" w3-include-html="views/common/footer.html"></div>	
+	</div>
 	<script type="text/javascript" src="app.js"></script>
 	<script>
 		w3.includeHTML();

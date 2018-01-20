@@ -33,6 +33,8 @@ gulp.task('default', function() {
 		.pipe(plugins.sass())
 		.pipe(gulp.dest('dist'));
 
+	gulp.src(['bower_components/bootstrap-sass/assets/fonts/**'])
+		.pipe(gulp.dest('dist/fonts/'));
 });
 
 // Minify images
