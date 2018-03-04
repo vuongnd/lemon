@@ -1,0 +1,60 @@
+.options-bar {
+    .btn- {
+        &row,
+        &grid {
+            color: tomato;
+            float: right;
+        }
+
+        &row {
+            margin-left: 4px;
+        }
+    }
+}
+
+.products
+{
+    width: 100%;
+
+    &-title {
+        display: inline;
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3.5px;
+        align-items: stretch;
+        border: 1px solid #cacaca;
+    }
+
+    &-items
+    {
+        width: 33.33%;
+
+        &:last-child .product,
+        &:nth-child(3n) .product {
+            margin-right: 3.5px;
+        }
+
+        .product {
+            margin: 3.5px;
+            border: 1px solid #cacaca;
+            height: calc(100% - 7px); // Remove marginX2 to return default height
+
+            .image {
+                width: 100%;
+            }
+
+            .product {
+                &-info {
+                    padding: 0 10px;
+                }
+
+                &-price {
+                    color: tomato;
+                }
+            }
+        }
+    }
+}

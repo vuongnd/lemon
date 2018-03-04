@@ -1,12 +1,18 @@
+.ads
+{
+    border: 1px solid #cacaca;
+    background: lightgrey;
+    min-height: 100px;
+}
+
 .wrap-ads
 {
     padding:0 0 0 5px;
 }
+
 .ads-right
 {
-    border: 1px solid grey;
+    border: 1px solid #cacaca;
     background: lightgrey;
     min-height: 600px;
-    padding-left: 0;
-    padding-right: 0;
 }

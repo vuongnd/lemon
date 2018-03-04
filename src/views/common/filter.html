@@ -1,104 +1,124 @@
-<div class="ads-top hidden-xs hidden-sm">
-
-</div>    
 <div class="row">
-    <div class="filter-menu">
-            <ul>
-                <li>Trang chủ >></li>
-                <li>Đà Nẵng >></li>
-                <li>Đồ uống </li>
+    <div class="col-md-12 filter-breadcrumb">
+        <!-- Use HTML special character here pls! -->
+            <ul class="breadcrumb-list">
+                <li class="breadcrumb-items">Trang chủ >> </li>
+                <li class="breadcrumb-items">Đà Nẵng >> </li>
+                <li class="breadcrumb-items">Đồ uống </li>
             </ul>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12 search">
-        <div style="position: relative;">
-            <form class="form-search">
-                <input type="text" id="searchValue" class="input-search" autocomplete="off" placeholder="Nhập từ khoá bạn tìm kiếm" value="">
-                <button type="submit" class="bt-search">
-                    <i class="fa fa-search fa-lg" aria-hidden="true"></i>
-                </button>
-            </form>
-        </div>
+        <form class="form-search input-group">
+            <input type="text" class="form-control" placeholder="Search here" aria-describedby="basic-addon2">
+            <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-search" aria-hidden="true"></i></span>
+        </form>
     </div>
-    <div class=" filter-wrap">
-        <div class="col-md-12 filter-col">
-            <div class="row">
-                <div class=" filter-content col-xs-12">
-                <span>
-                    <button class="btn btn-default btn-lg col-xs-4 bt-filter">
-                            <span itemprop="name">Đà Nẵng</span>
-                            <span class="caret icon-filter"></span>
-                    </button>
-                    <div style="display: none;">
+    <div class="col-md-12 filter-bar">
+        <div class="filter-items filter-city">
+            <button type="button" class="btn btn-block btn-square" data-toggle="modal" data-target="#city">
+                City
+            </button>
+            <div class="modal fade" id="city" tabindex="-1" role="dialog" aria-labelledby="cityLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="cityLabel">Choose your Location</h4>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
                     </div>
-                </span>
-                <span>
-                    <button class="btn btn-default btn-lg col-xs-4 bt-filter">
-                        <span itemprop="name">Đồ uống</span>
-                        <span class="caret icon-filter"></span>
-                    </button>
-                    <div style="display: none;">
+                </div>
+            </div>
+        </div>
+        <div class="filter-items filter-type">
+            <button type="button" class="btn btn-block btn-square" data-toggle="modal" data-target="#type">
+                type
+            </button>
+            <div class="modal fade" id="type" tabindex="-1" role="dialog" aria-labelledby="typeLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="typeLabel">Choose your Location</h4>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
                     </div>
-                </span>
-                <span>
-                        <button class="btn btn-default btn-lg col-xs-4 bt-filter">
-                            <span itemprop="name">Ngày đăng</span>
-                            <span class="caret icon-filter"></span>
-                        </button>
-                </span>
+                </div>
+            </div>
+        </div>
+        <div class="filter-items filter-price">
+            <button type="button" class="btn btn-block btn-square" data-toggle="modal" data-target="#price">
+                price
+            </button>
+            <div class="modal fade" id="price" tabindex="-1" role="dialog" aria-labelledby="priceLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="priceLabel">Choose your Location</h4>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="col-md-12 wrap">
-    <div class="title">
-        <div class="content-title">Tin đặc biệt</div>
-    </div>
-    <div class="product-best">
-        <ul>
-            <li>
-                <div class="content-product-best">
-                    <div class="detail-product-best">
-                        <div class="imagebox">
-                            <img src="images/dongho.jpg" itemprop="image" alt="Đồng hồ cơ cổ Nga" class="imagebox">
-                        </div>
-                        <h3 itemprop="name" class="title-product-best">Đồng hồ cơ cổ Nga</h3>
-                        <span class="price-product-best" content="900000">900.000
-                        <meta content="VND"></span>
+<div class="row special-news">
+    <h2 class="col-md-12">Tin đặc biệt
+    </h2>
+    <div class="col-md-12 products">
+        <ul class="products-list">
+            <li class="products-items">
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/default-image.jpg" itemprop="image" alt="Đồng hồ cơ cổ Nga" class="image">
+                    </div>
+                    <div class="product-info">
+                        <h4 itemprop="name" class="product-title">Đồng hồ cơ cổ Nga</h4>
+                        <p class="product-price">900.000 VND</p>
                     </div>
                 </div>
             </li>
-            <li>
-                <div class="content-product-best">
-                    <div class="detail-product-best">
-                        <div class="imagebox">
-                            <img src="images/dongho.jpg" itemprop="image" alt="Đồng hồ cơ cổ Nga" class="imagebox">
-                        </div>
-                        <h3 itemprop="name" class="title-product-best">Đồng hồ cơ cổ Nga</h3>
-                        <span class="price-product-best" content="900000">900.000
-                        <meta content="VND"></span>
+            <li class="products-items">
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/default-image.jpg" itemprop="image" alt="Đồng hồ cơ cổ Nga" class="image">
+                    </div>
+                    <div class="product-info">
+                        <h4 itemprop="name" class="product-title">Đồng hồ cơ cổ Nga</h4>
+                        <p class="product-price">900.000 VND</p>
                     </div>
                 </div>
             </li>
-            <li>
-                <div class="content-product-best">
-                    <div class="detail-product-best">
-                        <div class="imagebox">
-                            <img src="images/dongho.jpg" itemprop="image" alt="Đồng hồ cơ cổ Nga" class="imagebox">
-                        </div>
-                        <h3 itemprop="name" class="title-product-best">Đồng hồ cơ cổ Nga</h3>
-                        <span class="price-product-best" content="900000">900.000
-                        <meta content="VND"></span>
+            <li class="products-items">
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/default-image.jpg" itemprop="image" alt="Đồng hồ cơ cổ Nga" class="image">
+                    </div>
+                    <div class="product-info">
+                        <h4 itemprop="name" class="product-title">Đồng hồ cơ cổ Nga</h4>
+                        <p class="product-price">900.000 VND</p>
                     </div>
                 </div>
             </li>
         </ul>
     </div>
-</div>
-
-<div class="col-md-12 bt-content">
-    <button class="bt-danhsach glyphicon glyphicon-th-list " title="Dạng danh sách"></button>
-    <button class="bt-luoi glyphicon glyphicon-th-large" title="Dạng lưới"></button>
 </div>

@@ -28,13 +28,15 @@ gulp.task('default', function() {
 	gulp.src('src/**/*.html')
 	    .pipe(plugins.htmlmin({collapseWhitespace: true}))
 		.pipe(gulp.dest('dist'));
-		
-	gulp.src(['src/**/style.scss', 'src/**/bootstrap-custom.scss'])
+
+	gulp.src(['src/**/style.scss'])
 		.pipe(plugins.sass())
-		.pipe(gulp.dest('dist'));
+		.pipe(gulp.dest('dist/styles/'));
 
 	gulp.src(['bower_components/bootstrap-sass/assets/fonts/**'])
 		.pipe(gulp.dest('dist/fonts/'));
+	gulp.src(['bower_components/bootstrap-sass/assets/javascripts/*.min.js', 'bower_components/jquery/dist/jquery.min.js'])
+		.pipe(gulp.dest('dist/scripts/'));
 });
 
 // Minify images
