@@ -82,10 +82,13 @@
     </div>
 </div>
 <div class="row special-news">
-    <h2 class="col-md-12">Tin đặc biệt
-    </h2>
+    <div class="col-md-12 options-bar">
+        <h2 class="products-title">Tin đặc biệt</h2>
+        <button onclick="switchView()" class="btn btn-row glyphicon glyphicon-th-list switch-view disabled" title="Dạng danh sách"></button>
+        <button onclick="switchView()" class="btn btn-grid glyphicon glyphicon-th-large switch-view" title="Dạng lưới"></button>
+    </div>
     <div class="col-md-12 products">
-        <ul class="products-list">
+        <ul class="products-list row-view">
             <li class="products-items">
                 <div class="product">
                     <div class="product-image">
