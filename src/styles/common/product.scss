@@ -42,9 +42,51 @@
             }
 
             .product {
+                position: relative;
                 margin: 3.5px;
                 border: 1px solid #cacaca;
                 height: calc(100% - 7px); // Remove marginX2 to return default height
+
+                &-profile {
+                    position: absolute;
+                    bottom: 0;
+                    right: 7px;
+                    text-align: right;
+                    margin: 0 0 3.5px;
+
+                    .user-icon {
+                        color: #cacaca;
+                    }
+
+                    span {
+                        position: relative;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: visibility 0s, opacity 1s linear;
+                        background: #cacaca;
+                        margin-right: 20px;
+                        border-top-left-radius: 7px;
+                        border-bottom-left-radius: 7px;
+                    }
+                    span:before {
+                        content: "";
+                        position: absolute;
+                        right: -20px;
+                        bottom: 0;
+                        border-left: 20px solid #cacaca;
+                        border-top: 15px solid transparent;
+                        border-bottom: 15px solid transparent;
+                    }
+
+                    &:hover {
+                        span {
+                            visibility: visible;
+                            opacity: 1;
+                            background-color: #cacaca;
+                            padding: 7px;
+                        }
+                    }
+                }
 
                 .image {
                     width: 100%;
@@ -78,14 +120,31 @@
             }
 
             .product {
+                position: relative;
                 margin: 3.5px;
                 border: 1px solid #cacaca;
                 height: 100%; // Remove marginX2 to return default height
+
+                &-profile {
+                    position: absolute;
+                    text-align: right;
+                    margin-bottom: 0;
+                    bottom: 3.5px;
+                    right: 7px;
+                }
+
+                &-info {
+                    height: 100%;
+                }
 
                 &:after {
                     content: "";
                     clear: both;
                     display: table;
+                }
+
+                .user-icon {
+                    color: #cacaca;
                 }
 
                 .product-image {
