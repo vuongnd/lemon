@@ -1,4 +1,6 @@
-.ads
+.ads,
+.advetisement-google,
+.advetisement-producer
 {
     border: 1px solid #cacaca;
     background: lightgrey;
@@ -6,9 +8,12 @@
     margin: 7px 0;
 }
 
-.wrap-ads
-{
-    padding:0 0 0 5px;
+.advetisement-google {
+    min-height: 400px;
+}
+
+.advetisement-producer {
+    min-height: 800px;
 }
 
 .ads-right
