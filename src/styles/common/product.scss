@@ -12,13 +12,9 @@
 
 .options-bar {
     .btn- {
-        &row,
-        &grid {
+        &option {
             color: tomato;
             float: right;
-        }
-
-        &row {
             margin-left: 4px;
         }
     }
