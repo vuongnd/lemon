@@ -29,13 +29,13 @@ gulp.task('default', function() {
 	    .pipe(plugins.htmlmin({collapseWhitespace: true}))
 		.pipe(gulp.dest('dist'));
 
-	gulp.src(['src/**/style.scss'])
+	gulp.src(['src/**/style.scss', 'node_modules/blueimp-gallery/css/blueimp-gallery.min.css'])
 		.pipe(plugins.sass())
 		.pipe(gulp.dest('dist/styles/'));
 
 	gulp.src(['bower_components/bootstrap-sass/assets/fonts/**'])
 		.pipe(gulp.dest('dist/fonts/'));
-	gulp.src(['bower_components/bootstrap-sass/assets/javascripts/*.min.js', 'bower_components/jquery/dist/jquery.min.js'])
+	gulp.src(['bower_components/bootstrap-sass/assets/javascripts/*.min.js', 'bower_components/jquery/dist/jquery.min.js', 'node_modules/blueimp-gallery/js/blueimp-gallery.min.js'])
 		.pipe(gulp.dest('dist/scripts/'));
 });
 

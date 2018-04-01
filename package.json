@@ -24,6 +24,7 @@
     "jshint-stylish": "^2.2.1"
   },
   "dependencies": {
+    "blueimp-gallery": "^2.33.0",
     "gulp-htmlmin": "^4.0.0"
   }
 }
