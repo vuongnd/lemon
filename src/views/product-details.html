@@ -1,17 +1,40 @@
 <div class="product-content">
     <button onclick="openProductDetails()" class="btn btn-details glyphicon glyphicon-menu-right"></button>
-    <h1>this is product title</h1>
+    <h1 class="product-title">this is product title</h1>
+    <div class="row">
+        <div id="main-slider" class="col-md-6">
+            <a href="images/default-image.jpg" title="default-image">
+                <img src="images/default-image.jpg" alt="default-image">
+            </a>
+        </div>
+        <div class="col-md-6 saler-profile">
+            <p class="saler-name">
+                <img class="saler-avatar" src="images/profile-default.png" alt="avatar">
+                Saler name
+            </p>
+            <p class="saler-phone">Phone: 123123123</p>
+            <p class="address">Sale address</p>
 
-    <div id="main-slider">
-        <a href="images/default-image.jpg" title="default-image">
-            <img src="images/default-image.jpg" alt="default-image">
-        </a>
-        <a href="images/default-image.jpg" title="default-image">
-            <img src="images/default-image.jpg" alt="default-image">
-        </a>
-        <a href="images/default-image.jpg" title="default-image">
-            <img src="images/default-image.jpg" alt="default-image">
-        </a>
+            <ul class="saler-star">
+                <li>Star: </li>
+                <li class="star-status">*</li>
+                <li class="star-status">*</li>
+                <li class="star-status">*</li>
+                <li class="star-status">*</li>
+                <li class="star-status">*</li>
+            </ul>
+
+            <div class="contact-saler">
+                <button class="btn btn-success calling">Bấm để hiện số</button>
+                <button class="btn btn-info message">Nhắn tin</button>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="policies">
+        <h3 class="policy-title"> Các điều khoản sử dụng website: </h3>
     </div>
 
     <!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
@@ -24,20 +47,3 @@
         <ol class="indicator"></ol>
     </div>
 </div>
-<script>
-    blueimp.Gallery(
-        document.getElementById('main-slider').getElementsByTagName('a'),
-        {
-            container: '#blueimp-gallery-carousel',
-            carousel: true
-        }
-    );
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="scripts/blueimp-gallery.js"></script>
-<script src="scripts/blueimp-gallery-fullscreen.js"></script>
-<script src="scripts/blueimp-gallery-indicator.js"></script>
-<script src="scripts/blueimp-gallery-video.js"></script>
-<script src="scripts/blueimp-gallery-youtube.js"></script>
-<script src="scripts/blueimp-gallery-vimeo.js"></script>
-<script src="scripts/jquery.blueimp-gallery.js"></script>
