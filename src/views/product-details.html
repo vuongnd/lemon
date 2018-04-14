@@ -1,4 +1,43 @@
 <div class="product-content">
     <button onclick="openProductDetails()" class="btn btn-details glyphicon glyphicon-menu-right"></button>
     <h1>this is product title</h1>
+
+    <div id="main-slider">
+        <a href="images/default-image.jpg" title="default-image">
+            <img src="images/default-image.jpg" alt="default-image">
+        </a>
+        <a href="images/default-image.jpg" title="default-image">
+            <img src="images/default-image.jpg" alt="default-image">
+        </a>
+        <a href="images/default-image.jpg" title="default-image">
+            <img src="images/default-image.jpg" alt="default-image">
+        </a>
+    </div>
+
+    <!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
+    <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
 </div>
+<script>
+    blueimp.Gallery(
+        document.getElementById('main-slider').getElementsByTagName('a'),
+        {
+            container: '#blueimp-gallery-carousel',
+            carousel: true
+        }
+    );
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="scripts/blueimp-gallery.js"></script>
+<script src="scripts/blueimp-gallery-fullscreen.js"></script>
+<script src="scripts/blueimp-gallery-indicator.js"></script>
+<script src="scripts/blueimp-gallery-video.js"></script>
+<script src="scripts/blueimp-gallery-youtube.js"></script>
+<script src="scripts/blueimp-gallery-vimeo.js"></script>
+<script src="scripts/jquery.blueimp-gallery.js"></script>
