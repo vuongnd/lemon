@@ -1,0 +1,49 @@
+.filter-breadcrumb
+{
+    .breadcrumb-items {
+        float: left;
+        font: 16px 'Arial', sans-serif;
+    }
+}
+
+.form-search
+{
+    input,
+    span {
+        border-radius: 0;
+        border-color: #cacaca;
+        height: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+// Filter
+
+.filter {
+    &-bar {
+        display: flex;
+
+        .btn-square {
+            border-radius: 0;
+            background-color: transparent;
+            padding: 10px;
+        }
+    }
+
+    &-area {
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
+    &-items {
+        width: 100%;
+        border-width: 0 0 1px 1px;
+        border-style: solid;
+        border-color: #cacaca;
+
+        &:last-child {
+            border-width: 0 1px 1px 1px;
+        }
+    }
+}

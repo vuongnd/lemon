@@ -1,0 +1,182 @@
+// News products
+.options-bar {
+    margin-bottom: 7px;
+}
+
+.products-title {
+    font-weight: 500;
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.options-bar {
+    .btn- {
+        &option {
+            color: tomato;
+            float: right;
+            margin-left: 4px;
+        }
+    }
+}
+
+.special-news {
+    .products-title {
+        display: inline;
+    }
+}
+
+.products
+{
+    width: 100%;
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3.5px;
+        align-items: stretch;
+        border: 1px solid #cacaca;
+    }
+
+    .grid-view {
+
+        .products-items
+        {
+            width: 33.33%;
+
+            &:last-child .product,
+            &:nth-child(3n) .product {
+                margin-right: 3.5px;
+            }
+
+            .product {
+                position: relative;
+                margin: 3.5px;
+                border: 1px solid #cacaca;
+                height: calc(100% - 7px); // Remove marginX2 to return default height
+
+                &-profile {
+                    position: absolute;
+                    bottom: 0;
+                    right: 7px;
+                    text-align: right;
+                    margin: 0 0 3.5px;
+
+                    .user-icon {
+                        color: #cacaca;
+                    }
+
+                    span {
+                        position: relative;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: visibility 0s, opacity 1s linear;
+                        background: #cacaca;
+                        margin-right: 20px;
+                        border-top-left-radius: 7px;
+                        border-bottom-left-radius: 7px;
+                    }
+                    span:before {
+                        content: "";
+                        position: absolute;
+                        right: -20px;
+                        bottom: 0;
+                        border-left: 20px solid #cacaca;
+                        border-top: 15px solid transparent;
+                        border-bottom: 15px solid transparent;
+                    }
+
+                    &:hover {
+                        span {
+                            visibility: visible;
+                            opacity: 1;
+                            background-color: #cacaca;
+                            padding: 7px;
+                        }
+                    }
+                }
+
+                .image {
+                    width: 100%;
+                }
+
+                .product {
+                    &-info {
+                        padding: 0 10px;
+                    }
+
+                    &-price {
+                        color: tomato;
+                    }
+                }
+            }
+        }
+    }
+
+    .row-view {
+
+        .products-items
+        {
+            display: block;
+            width: 100%;
+            height: 100%;
+            -webkit-transition: width 0.5s; /* Safari */
+            transition: width 0.5s;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            .product {
+                position: relative;
+                margin: 3.5px;
+                border: 1px solid #cacaca;
+                height: 100%; // Remove marginX2 to return default height
+
+                &-profile {
+                    position: absolute;
+                    text-align: right;
+                    margin-bottom: 0;
+                    bottom: 3.5px;
+                    right: 7px;
+                }
+
+                &-info {
+                    height: 100%;
+                }
+
+                &:after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+
+                .user-icon {
+                    color: #cacaca;
+                }
+
+                .product-image {
+                    max-width: 150px;
+                    padding: 7px;
+                    float: left;
+
+                    .image {
+                        width: 100%;
+                    }
+                }
+
+                .product {
+                    float: left;
+
+                    &-info {
+                        padding: 0 10px;
+                    }
+
+                    &-price {
+                        color: tomato;
+                    }
+                }
+            }
+        }
+    }
+}

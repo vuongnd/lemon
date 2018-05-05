@@ -1,0 +1,59 @@
+.btn-details {
+    color: tomato;
+    border-radius: 0;
+}
+
+.open-product {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    z-index: 9999;
+}
+
+.product-details {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    z-index: 9999;
+    width: 100%;
+    background-color: #FFF;
+    transition: 2s;
+
+    .product-title {
+        font-weight: 600;
+        padding: 10px;
+        text-decoration: underline;
+    }
+}
+
+.product-details-block {
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #cacaca;
+}
+
+.product-content {
+    display: none;
+    background-color: #FFF;
+    width: 100%;
+}
+
+#main-slider {
+    padding-left: 25px;
+    padding-right: 5px;
+}
+
+#main-slider img {
+    width: 100%;
+}
+
+.saler-profile {
+    .saler-avatar {
+        max-width: 30px;
+    }
+
+    .saler-star li {
+        display: inline-block;
+    }
+}

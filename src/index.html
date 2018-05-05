@@ -3,16 +3,37 @@
 <head>
 	<title>Demo Gulp</title>
 	<script src="https://www.w3schools.com/lib/w3.js"></script>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="bootstrap-custom.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="styles/blueimp-gallery.css">
+	<link rel="stylesheet" href="styles/blueimp-gallery-indicator.css">
+	<link rel="stylesheet" href="styles/blueimp-gallery-video.css">
+	<link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-	<div w3-include-html="views/common/header.html"></div>
-	<div w3-include-html="views/common/contents.html"></div>
-	<div w3-include-html="views/common/footer.html"></div>	
-	<script type="text/javascript" src="app.js"></script>
+	<div class="social-nav" w3-include-html="views/common/socials.html"></div>
+	<div class="container">
+		<div class="row header-area" w3-include-html="views/common/header.html"></div>
+
+		<div class="row">
+			<div class="col-md-8 wrap-main">
+				<div class="ads-top-area" w3-include-html="views/common/ads-top.html"></div>
+				<div class="filter-area" w3-include-html="views/common/filter.html"></div>
+				<div class="content-area" w3-include-html="views/common/contents.html"></div>
+			</div>
+
+			<div class="col-md-4 advetisement">
+				<div class="row advetisement-left" w3-include-html="views/common/ads.html"></div>
+			</div>
+		</div>
+
+		<div class="row footer-area" w3-include-html="views/common/footer.html"></div>
+	</div>
+
 	<script>
 		w3.includeHTML();
 	</script>
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
